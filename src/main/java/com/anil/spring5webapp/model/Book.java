@@ -43,7 +43,7 @@ public class Book {
 	}
 
 	@ManyToMany
-	@JoinColumn(name = "author_id", referencedColumnName = "author_id")
+	@JoinColumn(name = "book_id", referencedColumnName = "author_id")
 	private Set<Author> authors = new HashSet();
 
 	public Long getId() {
